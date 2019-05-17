@@ -1,0 +1,173 @@
+ion-content {
+    --background: #ebebeb;
+}
+
+ion-title .status {
+    font-size: 11px;
+    font-family: arial;
+}
+
+.bar.bar-header.bar-positive {
+    display: flex;
+    justify-content: space-between;
+    background: #363435;
+    align-items: center;
+    color: #fff;
+    padding: 0 10px;
+    min-height: 45px;
+}
+
+.bar.bar-header h1 {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 0px;
+}
+
+.bar.bar-header ion-icon {
+    font-size: 24px;
+}
+
+.bar-dark {
+    background: #363435;
+}
+
+.bar-dark a.tab-item {
+    color: #fff;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+
+a.tab-item.active {
+    background: #d4c572;
+}
+
+.bar.bar-footer .tab-item img {
+    width: 30px;
+}
+
+a.tab-item {
+    padding: 10px;
+}
+
+.tabs.tabs-icon-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 0 0.5em;
+    font-weight: normal;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+}
+
+.row .col {
+    flex: 1;
+}
+
+.faq .col {
+    margin: 5px !important;
+}
+
+.row .col:last-child {
+    margin-left: 1em;
+}
+
+
+/* Accordion styles */
+
+.faq .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.faq .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.faq .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    color: #363435;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    background: #fff;
+}
+
+.faq .tab-label:hover {
+    background: #f5f5f5;
+}
+
+.faq .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.faq .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #363435;
+    background: white;
+    transition: all 0.35s;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.faq .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #363435;
+    cursor: pointer;
+}
+
+.faq .tab-close:hover {
+    background: #1a252f;
+}
+
+input:checked+.tab-label {
+    background: #f2f2f2;
+    color: #363435;
+}
+
+input:checked+.tab-label::after {
+    transform: rotate(90deg);
+}
+
+input:checked~.tab-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+.faq .tab {
+    margin-bottom: 10px;
+}
+
+.faq .tab:last-child {
+    margin-bottom: 0px;
+}

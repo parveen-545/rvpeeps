@@ -1,0 +1,7 @@
+{
+  "name": "RVPeepApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

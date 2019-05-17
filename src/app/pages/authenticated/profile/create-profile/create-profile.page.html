@@ -1,0 +1,170 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="space-between">
+            <ion-menu-button></ion-menu-button>
+            <ion-title>Setup Profile</ion-title>
+            <div class="right-arrow">
+                <ion-icon name="arrow-round-back"></ion-icon>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="create-profile">
+    <div class="profile-setup">
+        <div class="profile-img">
+            <img src="assets/profile-setup-img.png" alt="img">
+            <div class="ion-icon">
+                <ion-icon name="camera"></ion-icon>
+            </div>
+        </div>
+        <ion-label>
+            <h1>Riya Mahajan</h1>
+        </ion-label>
+        <div class="bio-icon">
+            <img src="assets/message.png" alt="img">
+        </div>
+
+        <div class="edit-bio">
+            <ion-textarea placeholder="Add a short bio to tell people more about yourself."></ion-textarea>
+        </div>
+        <div class="wid90">
+            <ion-button class="btn-bio" expand="full">+ Add Bio</ion-button>
+        </div>
+    </div>
+
+    <div class="basic-info">
+
+        <div class="basicinfo">
+            <img src="assets/icon-edit.png" alt="icon"> Basic Info</div>
+        <ion-list>
+            <ion-item>
+                <ion-label position="floating">Full Name</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Address</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Age Group</ion-label>
+                <ion-select placeholder="Select Age Group">
+                    <ion-select-option value="age20">Age Group 20's</ion-select-option>
+                    <ion-select-option value="age30">Age Group 30's</ion-select-option>
+                    <ion-select-option value="age40">Age Group 40's</ion-select-option>
+                    <ion-select-option value="age50">Age Group 50's</ion-select-option>
+                    <ion-select-option value="age60">Age Group 60's</ion-select-option>
+                    <ion-select-option value="age70">Age Group 70's</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Pets</ion-label>
+                <ion-select multiple="true">
+                    <ion-select-option value="bird" selected>Bird</ion-select-option>
+                    <ion-select-option value="cat">Cat</ion-select-option>
+                    <ion-select-option value="dog" selected>Dog</ion-select-option>
+                    <ion-select-option value="honeybadger">Honey Badger</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Employement Status</ion-label>
+                <ion-select placeholder="">
+                    <ion-select-option value="es-j">Still Working - Job</ion-select-option>
+                    <ion-select-option value="es-bo">Still Working - Business Owner</ion-select-option>
+                    <ion-select-option value="es-r">Retired</ion-select-option>
+                    <ion-select-option value="es-sr">Semi-Retired</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>LifeStyle</ion-label>
+                <ion-select placeholder="">
+                    <ion-select-option value="l-ft">Full-Time RV'ers</ion-select-option>
+                    <ion-select-option value="l-pt">Part-Time RV'ers</ion-select-option>
+                    <ion-select-option value="l-wv">Weekend/Vacation RV'ers</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Travel Preference</ion-label>
+                <ion-select placeholder="">
+                    <ion-select-option value="tp-rv">RV Park - Full Hookups</ion-select-option>
+                    <ion-select-option value="tp-rl">Remote Location - Partial or no Hookups</ion-select-option>
+                    <ion-select-option value="tp-b">Boondocking</ion-select-option>
+                    <ion-select-option value="tp-or">On the Road</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+
+
+            <ion-item>
+                <ion-label>Type of RV</ion-label>
+                <ion-select placeholder="">
+                    <ion-select-option value="">Class A - Diesel Motorhome</ion-select-option>
+                    <ion-select-option value="">Class A - Gas Motorhome</ion-select-option>
+                    <ion-select-option value="">Class C - Motorhome</ion-select-option>
+                    <ion-select-option value="">Fifth Wheel - Travel Trailer</ion-select-option>
+                    <ion-select-option value="">Travel Trailer</ion-select-option>
+                    <ion-select-option value="">Fold Down / Popup - Travel Trailer</ion-select-option>
+                    <ion-select-option value="">Truck Camper</ion-select-option>
+                    <ion-select-option value="">Toy Haulers</ion-select-option>
+                    <ion-select-option value="">Others</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+
+            <ion-item>
+                <ion-label>Interests</ion-label>
+                <ion-select multiple="true" cancelText="Cancel" okText="Okay!">
+                    <ion-select-option value="">ATV/Off-Roading</ion-select-option>
+                    <ion-select-option value="">Biking</ion-select-option>
+                    <ion-select-option value="">Birdwatching</ion-select-option>
+                    <ion-select-option value="">Boating</ion-select-option>
+                    <ion-select-option value="">Camprires</ion-select-option>
+                    <ion-select-option value="">Cocktails</ion-select-option>
+                    <ion-select-option value="">Dining In</ion-select-option>
+                    <ion-select-option value="">Fishing</ion-select-option>
+                    <ion-select-option value="">Golf</ion-select-option>
+                    <ion-select-option value="">Hiking</ion-select-option>
+                    <ion-select-option value="">Live Music</ion-select-option>
+                    <ion-select-option value="">Movies</ion-select-option>
+                    <ion-select-option value="">Painting</ion-select-option>
+                    <ion-select-option value="">Potluck</ion-select-option>
+                    <ion-select-option value="">Sightseeing</ion-select-option>
+                    <ion-select-option value="">Theater</ion-select-option>
+                    <ion-select-option value="">Pickleball</ion-select-option>
+                    <ion-select-option value="">Volunteering</ion-select-option>
+                    <ion-select-option value="">RV Renovation</ion-select-option>
+                    <ion-select-option value="">BBQ</ion-select-option>
+                    <ion-select-option value="">Bingo</ion-select-option>
+                    <ion-select-option value="">Board Games</ion-select-option>
+                    <ion-select-option value="">Boondocking</ion-select-option>
+                    <ion-select-option value="">Casinos</ion-select-option>
+                    <ion-select-option value="">Crafting</ion-select-option>
+                    <ion-select-option value="">Dining Out</ion-select-option>
+                    <ion-select-option value="">Flea Markets</ion-select-option>
+                    <ion-select-option value="">Guns</ion-select-option>
+                    <ion-select-option value="">Hunting</ion-select-option>
+                    <ion-select-option value="">Motorcycles</ion-select-option>
+                    <ion-select-option value="">Museums</ion-select-option>
+                    <ion-select-option value="">Playing Music</ion-select-option>
+                    <ion-select-option value="">Shopping</ion-select-option>
+                    <ion-select-option value="">Skiing</ion-select-option>
+                    <ion-select-option value="">Photography</ion-select-option>
+                    <ion-select-option value="">Rallies</ion-select-option>
+                    <ion-select-option value="">Co-Working</ion-select-option>
+                    <ion-select-option value="">Vlogging/Blogging</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

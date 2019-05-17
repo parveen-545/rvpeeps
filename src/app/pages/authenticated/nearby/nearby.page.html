@@ -1,0 +1,179 @@
+<ion-header>
+  <div class="bar bar-header bar-positive">
+          <ion-menu-button></ion-menu-button>
+      <ion-title>Nearby peeps</ion-title>
+      <ion-icon name="search"></ion-icon>
+  </div>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+      <ion-row ion-row class="row" responsive-sm wrap *ngFor="let item of nearbyPeepsList">
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>{{item.first_name}}</li>
+                      <li><ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img style="width:400px; height: 400px;" src="{{ImageUrl}}{{item.profile_image}}" alt="img">
+          </ion-col>
+          <!-- <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-2.png" alt="img">
+          </ion-col> -->
+      </ion-row>
+
+      <!-- <ion-row>
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-3.png" alt="img">
+          </ion-col>
+
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-4.png" alt="img">
+          </ion-col>
+
+
+
+      </ion-row>
+
+      <ion-row>
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-5.png" alt="img">
+          </ion-col>
+
+
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-6.png" alt="img">
+          </ion-col>
+
+
+      </ion-row>
+
+      <ion-row>
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-7.png" alt="img">
+          </ion-col>
+
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-8.png" alt="img">
+          </ion-col>
+
+
+      </ion-row>
+
+      <ion-row>
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-9.png" alt="img">
+          </ion-col>
+
+          <ion-col no-padding>
+              <div class="ion-notification">
+                  <ion-icon name="notifications"></ion-icon>
+                  <div class="ion-count">2</div>
+              </div>
+              <div class="ion-list-box">
+                  <ul>
+                      <li><span class="active"></span>John</li>
+                      <li>
+                          <ion-icon name="heart" class="red"></ion-icon> 25</li>
+                  </ul>
+              </div>
+              <img src=" assets/profile-pic-10.png" alt="img">
+          </ion-col>
+      </ion-row> -->
+  </ion-grid>
+</ion-content>
+<app-footer></app-footer>

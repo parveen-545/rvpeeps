@@ -1,0 +1,36 @@
+<ion-header>
+    <div class="bar bar-header bar-positive">
+        <ion-menu-button></ion-menu-button>
+        <ion-title>Current Location</ion-title>
+        <ion-icon name="search"></ion-icon>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="map-wrapper">
+        <div id="map_center">
+            <!-- <img src="../../assets/icon/center_marker.png" /> -->
+        </div>
+        <div #map id="map"></div>
+    </div>
+</ion-content>
+
+<div class="host-event">
+    <div class="head">
+        <h6>Host Event</h6>
+        <ion-icon name="close"></ion-icon>
+    </div>
+    <ion-item>
+        <ion-input name="name" type="text" placeholder="Name" ngModel required></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-input name="name" type="text" placeholder="20/06/2019" ngModel required></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-textarea placeholder="Event details here..." ngModel required></ion-textarea>
+    </ion-item>
+    <ion-button color="primary" size="small">Notify</ion-button>
+</div>
+
+<app-footer></app-footer>

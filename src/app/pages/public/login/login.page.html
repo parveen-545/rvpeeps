@@ -1,0 +1,102 @@
+<ion-content class="login">
+
+    <ion-grid>
+        <ion-row color="primary" justify-content-center class="mtop60">
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div class="logo">
+                    <img src=" assets/logo.png" alt="logo"> </div>
+                <div text-center>
+                    <h1>Login
+
+                    </h1>
+                    <p>If you're not an existing user. Please register for an account first.</p>
+                </div>
+                <form [formGroup]="loginform" (ngSubmit)="login(loginform.value)" class="login-bg">
+                    <div padding>
+                        <ion-item class="b-border" no-padding>
+                            <ion-icon ios="ios-mail" md="md-mail" class="i-icons"></ion-icon>
+                            <ion-input formControlName="email" name="email" type="email" placeholder="Your email address"></ion-input>
+                        </ion-item>
+                        <div class="validation-errors">
+                            <ng-container *ngFor="let validation of validationmessages.email">
+                                <div class="error-message" *ngIf="loginform.get('email').hasError(validation.type) && (loginform.get('email').dirty || loginform.get('email').touched)">
+                                    <ion-icon name="information-circle-outline" class="icon-pos"></ion-icon>
+                                    {{ validation.message }}
+                                </div>
+                            </ng-container>
+                        </div>
+                        <ion-item class="mtop15 b-border" no-padding>
+                            <ion-icon ios="ios-lock" md="md-lock" class="i-icons"></ion-icon>
+                            <ion-input formControlName="password" name="password" type="password" placeholder="Your Password"></ion-input>
+                        </ion-item>
+                        <div class="validation-errors">
+                            <ng-container *ngFor="let validation of validationmessages.password">
+                                <div class="error-message" *ngIf="loginform.get('password').hasError(validation.type) && (loginform.get('password').dirty || loginform.get('password').touched)">
+                                    <ion-icon name="information-circle-outline" class="icon-pos"></ion-icon>
+                                    {{ validation.message }}
+                                </div>
+                            </ng-container>
+                        </div>
+
+                        <div class="icon-heart">
+                            <ion-icon name="heart-empty"></ion-icon>
+                        </div>
+
+                        <div class="icon-wine">
+                            <ion-icon name="wine"></ion-icon>
+                        </div>
+                        <div class="icon-wine2">
+                            <ion-icon name="wine"></ion-icon>
+                        </div>
+
+                    </div>
+                    <div class="tb-padding">
+                        <ion-button size="large" type="submit" expand="block" class="btn-login" [disabled]="loginform.invalid">Login</ion-button>
+                        <!-- [disabled]="loginform.invalid" -->
+                    </div>
+                    <div class="tb-padding">
+                        <ion-button size="large" type="button" expand="block" routerLink="/register/" class="btn-default">Register</ion-button>
+                    </div>
+                </form>
+                <div class="socials">
+                    <div class="or">
+                        <div class="or-text">OR</div>
+                    </div>
+                    <p>Sign in with Social Networks</p>
+
+                    <ul>
+                        <li>
+                            <button (click)="doFbLogin()"> <img src="/assets/icon-fb.png"> </button>
+                        </li>
+                        <li><button (click)="doGoogleLogin()"><img src="assets/icon-google.png"></button></li>
+                        <li><img src="/assets/icon-tw.png"></li>
+                    </ul>
+                </div>
+
+                <div class="remember-me">
+                    <ul class="list">
+                        <li class="item item-checkbox">
+                            <label class="checkbox">
+                                    <ion-checkbox type="checkbox" class="checkbox-pos checkbox-outline"></ion-checkbox>
+                                    Remember me
+                                </label>
+                        </li>
+
+                        <li class="item">
+                            <a routerLink='/forgot-password/'>Forgot Password?</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </ion-col>
+        </ion-row>
+        <!-- <ion-row>
+        <div text-center>
+          If you don't have an account, please <a routerLink='/register'>
+            register</a> first!
+            </div>
+    </ion-row> -->
+    </ion-grid>
+</ion-content>

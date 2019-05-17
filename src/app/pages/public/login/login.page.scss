@@ -1,0 +1,254 @@
+ion-item {
+    --background: transparent;
+    --color: #fff;
+    border-bottom: 1px solid #fff !important;
+}
+
+ion-button {
+    --background: #062f77;
+}
+
+.sc-ion-input-ios-h {
+    --placeholder-opacity: 1;
+}
+
+$white: #fff;
+$purple: #7a67f3;
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.success-msg {
+    background: #27a130;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    z-index: 11;
+    transition: opacity 0.5s linear;
+    transform: translate(0);
+    opacity: 1;
+}
+
+.success-msg.hide,
+.error-msg.hide {
+    opacity: 0;
+    transition-delay: 2.5s;
+}
+
+.error-msg {
+    background: #c03a2b;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    z-index: 11;
+    transition: opacity 0.5s linear;
+    transform: translate(0);
+    opacity: 1;
+}
+
+.login {
+    font-family: 'Lato', sans-serif;
+}
+
+.login {
+    --background: -moz-linear-gradient(81deg, #7A67F3 23%, #7A67F3 44%, #9EE0D4 91%);
+    --background: -webkit-gradient(linear, 81deg, color-stop(23%, 7A67F3), color-stop(44%, 7A67F3), color-stop(91%, 9EE0D4));
+    --background: -webkit-linear-gradient(81deg, #7A67F3 23%, #7A67F3 44%, #9EE0D4 91%);
+    --background: -o-linear-gradient(81deg, #7A67F3 23%, #7A67F3 44%, #9EE0D4 91%);
+    --background: -ms-linear-gradient(81deg, #7A67F3 23%, #7A67F3 44%, #9EE0D4 91%);
+    --background: linear-gradient(81deg, #7A67F3 23%, #7A67F3 44%, #9EE0D4 91%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 40%;
+}
+
+.login h1 {
+    color: $white;
+    text-transform: uppercase;
+    padding: 15px 0 10px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.login p {
+    color: $white;
+    max-width: 72%;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.mtop15 {
+    margin-top: 15px;
+}
+
+.mtop30 {
+    margin-top: 30px;
+}
+
+.mtop60 {
+    margin-top: 60px;
+}
+
+.i-icons {
+    font-size: 16px;
+    color: $white;
+    margin-right: 7px;
+}
+
+.error-message {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.icon-pos {
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+}
+
+.checkbox-pos {
+    position: relative;
+    top: 3px;
+}
+
+.login .sc-ion-input-md-h {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn-login {
+    background: $white;
+    --background: #fff;
+    --color: #7a67f3;
+    opacity: 1;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.tb-padding {
+    padding-bottom: 5px;
+}
+
+.btn-default {
+    --background: transparent !important;
+    background: transparent;
+    border: 1px solid #fff;
+    --box-shadow: none !important;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.or {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.or:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    top: 20px;
+    left: 0;
+    z-index: 0;
+}
+
+.or-text {
+    position: absolute;
+    z-index: 2;
+    background: #7a67f3;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.socials p {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.socials ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socials ul li img {
+    width: 40px;
+}
+
+.socials ul li button {
+    background: transparent;
+}
+
+.remember-me ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: $white;
+    padding-left: 0;
+    align-items: center;
+}
+
+.icon-heart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    transform: rotate(-30deg) scale(1, 1) skew(0deg, 0deg) translate(0, -17px);
+}
+
+.icon-wine {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    transform: rotate(33deg) scale(1, 1) skew(0deg, 0deg) translate(78px, -135px);
+}
+
+.icon-wine2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    transform: rotate(-31deg) scale(1, 1) skew(0deg, 0deg) translate(-148px, 0px);
+}

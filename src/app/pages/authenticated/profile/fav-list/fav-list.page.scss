@@ -1,0 +1,80 @@
+.bar.bar-header.bar-positive {
+    display: flex;
+    justify-content: space-between;
+    background: #363435;
+    align-items: center;
+    color: #fff;
+    padding: 0 10px;
+    min-height: 45px;
+}
+
+.bar.bar-header h1 {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 0px;
+}
+
+.bar.bar-header ion-icon {
+    font-size: 24px;
+}
+
+.fav-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.fav-list ul li {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.fav-list ul li:nth-last-of-type(even) {
+    background: #f5f5f5;
+}
+
+.fav-list ul li div {
+    display: flex;
+    align-items: center;
+}
+
+.fav-list ul li img {
+    width: 25%;
+}
+
+.fav-list ul li img {
+    margin-right: 10px;
+}
+
+.bar-dark {
+    background: #363435;
+}
+
+.bar-dark a.tab-item {
+    color: #fff;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+
+a.tab-item.active {
+    background: #d4c572;
+}
+
+.bar.bar-footer .tab-item img {
+    width: 30px;
+}
+
+a.tab-item {
+    padding: 10px;
+}
+
+.tabs.tabs-icon-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fav-list-icons {
+    padding-right: 10px;
+}
